@@ -7,8 +7,8 @@ MOVIES=("RRR" "OG" "KANTARA CHAPTER-1" "KGF CHAPTER-2")
 #Index are 0,1,2 (Index always start with 0)
 
 #list always start with 0.
-echo "First movie is: ${MOVIES[0]"
+echo "First movie is: ${MOVIES[0]}"
 echo "Second movie is: ${MOVIES[1]}"
 echo "Second movie is: ${MOVIES[2]}"
 echo "Second movie is: ${MOVIES[3]}"
-echo "Second movie is: ${MOVIES[@]}" # PRINT ALL VALUES FROM ARRAY"
+echo "Second movie is: ${MOVIES[@]}" # PRINT ALL VALUES FROM ARRAY
