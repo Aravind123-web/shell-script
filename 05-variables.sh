@@ -8,7 +8,7 @@ echo "Please enter password::"
 
 read PASSWORD
 
-ECHO "Username is: $USERNAME, Password is: $PASSWORD
+echo "Username is: $USERNAME, Password is; $PASSWORD"
 
 
 
