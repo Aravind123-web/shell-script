@@ -11,4 +11,4 @@ echo "First movie is: ${MOVIES[0]"
 echo "Second movie is: ${MOVIES[1]}"
 echo "Second movie is: ${MOVIES[2]}"
 echo "Second movie is: ${MOVIES[3]}"
-echo "Second movie is: ${MOVIES[@]}" # PRINT ALL VALUES FROM ARRAY
+echo "Second movie is: ${MOVIES[@]}" # PRINT ALL VALUES FROM ARRAY"
