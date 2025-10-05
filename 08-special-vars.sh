@@ -9,4 +9,4 @@ echo "Which user running this script: $USER"
 echo "Hostname: $HOSTNAME"
 echo "which process ID of the current shell-script: $$"
 sleep 60
-
+echo "Process ID of last background command: $!"
