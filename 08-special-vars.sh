@@ -6,4 +6,5 @@ echo "Script Name: $0" # If you want to know script name
 echo "Current working directory: $PWD" # It prints curent working directory
 echo "Home directory of current user: $HOME"
 echo "Which user running this script: $USER"
-echo "Hostname: $HOSTNAME"
+echo "Hostname: $HOSTNAME
+echo "Process ID of the current shell-script: $$"
