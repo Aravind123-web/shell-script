@@ -6,7 +6,7 @@
 #3. If it is greater than 10 then print greater
 #4. If it is not greater than 10 then print lower 
 NUMBER=$1 # DECLARE VARIABLES FROM OUTSIDE
-if[$NUMBER -gt 10]
+if [ $NUMBER -gt 10 ]
 then
 echo "Given number $NUMBER is gretaer than 10"
 else
