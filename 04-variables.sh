@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#declaring variable
+#declaring variable from outside by using $ symbol
 person1=$1
 person2=$2
 
