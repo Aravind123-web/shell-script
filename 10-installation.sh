@@ -8,10 +8,11 @@ then
 else 
      echo "you are super user."
 fi
-dnf install git -y
+dnf install gitt -y
 
 if [ $? -ne 0 ]
 then 
       echo "Installation of git is Failure"
+      exit 23
 fi
 echo "is Script Procedding?"
