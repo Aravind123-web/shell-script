@@ -1,20 +1,18 @@
 #!/bin/bash
 USERID=$(id -u)
 #DECLARTION OF FUNCTION SYNTAX
-VALIDATE() {
+VALIDATE(){
 
     #echo "exit statue: $1"
     #echo "What are you doing: $2"
-    if [ $1 -ne 0]
+    if [ $1 -ne 0 ]
     then 
          echo "$2 is Failure"
+         exit 1
     else 
          echo "$2 is Success"
-    exit 1
     fi
-
 }
-
 
 if [ $USERID -ne 0 ] 
 then
