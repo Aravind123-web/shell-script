@@ -3,8 +3,15 @@ USERID=$(id -u)
 #DECLARTION OF FUNCTION SYNTAX
 VALIDATE() {
 
-    echo "exit statue: $1"
-    echo "What are you doing: $2"
+    #echo "exit statue: $1"
+    #echo "What are you doing: $2"
+    if [ $1 -ne 0]
+    then 
+         echo "$2 is Failure"
+    else 
+         echo "$2 is Success"
+    exit 1
+    fi
 
 }
 
