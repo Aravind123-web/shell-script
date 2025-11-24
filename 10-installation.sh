@@ -8,11 +8,14 @@ then
 else 
      echo "you are super user."
 fi
-dnf install gitt -y
+dnf install git -y
 
 if [ $? -ne 0 ]
 then 
       echo "Installation of git is Failure"
       exit 23
 fi
+
+dnf install nginx -y
+
 echo "is Script Procedding?"
