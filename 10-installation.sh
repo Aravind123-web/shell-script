@@ -8,10 +8,10 @@ then
 else 
      echo "you are super user."
 fi
-dnf install mysql -y
+dnf install git -y
 
 if [ $? -ne 0 ]
 then 
-      echo "Installation of MySql is Failure"
+      echo "Installation of git is Failure"
 fi
 echo "is Script Procedding?"
