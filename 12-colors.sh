@@ -7,7 +7,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 #colors given below
 R="\e[31m]"
 G="\e[32m]"
-N="\e[0m]
+N="\e[0m]"
 
 echo "script started executing at: $TIMESTAMP"
 
