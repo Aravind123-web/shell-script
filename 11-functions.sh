@@ -1,5 +1,8 @@
 #!/bin/bash
 USERID=$(id -u)
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPT_NAME=$($0 | cut -d "." -f1)
+LOGFILE= /tmp/$SCRIPT_NAME-$TIMESTAMP.log
 #DECLARTION OF FUNCTION SYNTAX
 VALIDATE(){
 
@@ -13,7 +16,6 @@ VALIDATE(){
          echo "$2 is Success"
     fi
 }
-
 if [ $USERID -ne 0 ] 
 then
     echo "Please run this script with root access."
@@ -21,8 +23,8 @@ then
 else 
      echo "you are super user."
 fi
-dnf install git -y
+dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing git"
 
-dnf install nginx -y
+dnf install nginx -y $>>$LOGFILE
 VALIDATE $? "Installing nginx"
