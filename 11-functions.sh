@@ -26,5 +26,5 @@ fi
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing git"
 
-dnf install nginx -y $>>$LOGFILE
+dnf install nginx -y &>>$LOGFILE
 VALIDATE $? "Installing nginx"
