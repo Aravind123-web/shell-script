@@ -11,6 +11,6 @@ fi
 
 for i in $@
 do
-    echo "packages to install: $1"
+    echo "packages to install: $i"
 done
 
