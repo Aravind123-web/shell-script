@@ -1,6 +1,10 @@
 #1/bin/bash
 
 USERID=$(id -u)
+TIMESTAMP=$(DATE +%F-%H-%M-%S)
+SCRIPT_NAME=$($0 | cut -d '.' -f1)
+LOGFILE=/TMP/$SCRIPT_NAME-$TIMESTAMP.log
+
 if [ $USERID -ne 0 ]
 then
     echo "Please run this script as root user"
@@ -13,6 +17,12 @@ for i in $@
 do
     echo "packages to install: $i"
 
-    dnf list installed $i
+    dnf list installed $i &>> $LOGFILE
+    if [ $? -eq 0 ]
+    then 
+        echo "$i is already installed...SKIPPING"
+    else
+        echo "$i is not installed...Need to Install"
+    fi
 done
 
