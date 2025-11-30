@@ -9,6 +9,17 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 Y="\e[33m"
+VALIDATE(){
+
+    if [ $1 -ne 0]
+    then 
+         echo  "$2...$R Failure $N"
+         exit 1
+    else 
+         echo "$2...$G Success $N"
+    fi
+
+}
 
 if [ $USERID -ne 0 ]
 then
