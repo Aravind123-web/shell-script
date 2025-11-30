@@ -11,16 +11,14 @@ N="\e[0m"
 Y="\e[33m"
 VALIDATE(){
 
-    if [ $1 -ne 0]
+    if [ $1 -ne 0 ]
     then 
          echo  -e "$2...$R Failure $N"
          exit 1
     else 
          echo -e "$2...$G Success $N"
     fi
-
 }
-
 if [ $USERID -ne 0 ]
 then
     echo "Please run this script as root user"
@@ -38,7 +36,7 @@ do
     then 
         echo -e "$i is already installed...$Y SKIPPING $N"
     else
-        dnf install $i &>>$LOGFILE
+        dnf install $i -y &>>$LOGFILE
         VALIDATE $? "Installation of $i"
     fi
 done
