@@ -10,5 +10,5 @@ MOVIES=("RRR" "OG" "KANTARA CHAPTER-1" "KGF CHAPTER-2")
 echo "First movie is: ${MOVIES[0]}"
 echo "Second movie is: ${MOVIES[1]}"
 echo "Second movie is: ${MOVIES[2]}"
-echo "Second movie is: ${MOVIES[3]}"
+echo "Third movie is: ${MOVIES[3]}"
 echo "Second movie is: ${MOVIES[@]}" # PRINT ALL VALUES FROM ARRAY

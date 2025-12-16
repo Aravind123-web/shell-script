@@ -29,7 +29,7 @@ fi
 
 for i in $@
 do
-    echo "packages to install: $i"
+    echo "packages to installing: $i"
 
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0 ]
