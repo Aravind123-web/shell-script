@@ -1,6 +1,6 @@
 #!/bin/bash
-# example 1
-for i in {20..1}
+# example
+for i in {1..20}
 do 
     echo $i
 done
